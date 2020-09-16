@@ -1,0 +1,147 @@
+body {
+  text-align: center;
+  background-color: #feceab;
+}
+
+.hr {
+  color: #D3D3D3;
+}
+
+.header {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: #000;
+  width: 100%;
+height:90%; 
+position:absolute;
+top:0;
+left:0;
+}
+
+.header h1 {
+  color: #e84a5f;
+  font-weight: 700;
+  font-family: 'Press Start 2P', sans-serif;
+  padding-top: 5%;
+}
+
+
+.trigger {
+  border-radius: 7.5%;
+  background-color:  #e84a5f;
+  border: 2px solid #fff;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 7.5%;
+}
+
+/* Modal */
+
+ .modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 24rem;
+        border-radius: 0.5rem;
+    }
+    .close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button:hover {
+        background-color: darkgray;
+    }
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+
+.down-button {
+  margin-top: 10%;
+}
+.down-button i {
+  color: #feceab;
+}
+
+
+
+
+    #game {
+  margin-top: 60%;
+}
+
+
+#level-title {
+  font-family: 'Press Start 2P';
+  font-weight: 900;
+  font-size: 3rem;
+  margin:  5%;
+  color: #e84a5f;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid #000;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
