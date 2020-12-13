@@ -6,80 +6,84 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Simon</title>
+  <title>Memory Game</title>
 
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+  <link rel="icon" href="images/game-favicon.png" type="image/png">
 
 </head>
 
 <body>
-  <!-- Modal -->
-  <section id="home">
-    <div class="header">
-      <h1>Simon Memory Game</h1>
-      <button class="trigger">Instructions</button>
-      <div class="modal">
-        <div class="modal-content">
-          <span class="close-button">&times;</span>
-          <h1>Simon Memory Game</h1>
-          <hr>
-          <h2>Put your memory to the test!</h2>
-          <h3>Instructions:</h3>
-          <ol>
-            <li>Press any key to start/restart the game.</li>
-            <li>One of the squares will then flash, you must click on this square.</li>
-            <li>A second square will flash. Now you must click on the first square and then the second square.</li>
-            <li>A third square will flash. You must click the first, second and third square in the correct order.</li>
-            <li>The game will continue adding squares and you must try to repeat the entire sequence to get to the next level.
-            </li>
-            Remember, if the screen goes red and makes the "RAZZ" sound it's game over and time to start again.
-          </ol>
+  <section id="game">
+    <h1 class="level-title">Press any key to start</h1>
+    <div class="flex-container">
+      <div>
+        <div class="row">
+
+          <div type="button" id="green" class="btn green">
+
+          </div>
+
+          <div type="button" id="red" class="btn red">
+
+          </div>
         </div>
+
+        <div class="row">
+
+          <div type="button" id="yellow" class="btn yellow">
+
+          </div>
+          <div type="button" id="blue" class="btn blue">
+
+          </div>
+
+        </div>
+
       </div>
-      <div class="down-button">
-        <a href="#game">
-          <i class="fas fa-gamepad fa-5x"></i>
-        </a>
+
+      <!-- Modal -->
+      <aside id="instructions">
+        <button class="trigger">Instructions</button>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Memory Game</h1>
+            <hr>
+            <ol>
+              <li>Press any key to start/restart the game.</li>
+              <li>One of the squares will then flash, you must click on this square.</li>
+              <li>A second square will flash. Now you must remember to click on the first square and then the second
+                square.</li>
+              <li>A third square will flash. You must click the first, second and third square in the correct order.
+              </li>
+              <li>The game will continue adding squares and you must try to repeat the entire sequence to get to the
+                next
+                level.
+              </li>
+              Remember, if the screen goes red and makes the "RAZZ" sound it's game over and time to start again.
+            </ol>
+            <h3>Put your memory to the test</h3>
+          </div>
         </div>
-  
+      </aside>
     </div>
 
   </section>
 
-  <section id="game">
 
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div class="row">
 
-      <div type="button" id="green" class="btn green">
+  <footer>
+    <p>Copyright Anita Readman <span id="year"></span></p>
+  </footer>
 
-      </div>
-
-      <div type="button" id="red" class="btn red">
-
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
+  <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="game.js" charset="UTF-8"></script>
+
 </body>
 
 </html>

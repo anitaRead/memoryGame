@@ -1,7 +1,7 @@
 // Modal
-var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".trigger");
-var closeButton = document.querySelector(".close-button");
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
@@ -98,3 +98,8 @@ const startOver = () => {
     gamePattern = [];
     started = false;
 }
+
+
+// Current year - copyright
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
